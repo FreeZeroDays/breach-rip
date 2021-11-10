@@ -1,8 +1,8 @@
-# Breach-RIP
+# breach-rip
 
-Breach-RIP is a modified version of [breach-parse](https://github.com/hmaverickadams/breach-parse) by Heath Adams that runs significantly faster thanks to [ripgrep](https://github.com/BurntSushi/ripgrep) and outputs more information! 
+breach-rip is a modified version of [breach-parse](https://github.com/hmaverickadams/breach-parse) by Heath Adams that runs significantly faster thanks to [ripgrep](https://github.com/BurntSushi/ripgrep) and outputs more information! 
 
-Breach-RIP works best when ran against several databases. 
+breach-rip works best when ran against several databases. 
 
 I highly recommend cleaning up your lists prior to running Breach-RIP. While easy to modify, it will grep the third delimiter of the main-list for the password. While this works perfectly for some lists, it may not with others. I strongly recommend referring to the main-list if your password list looks funky!
 
@@ -15,6 +15,9 @@ Install Ripgrep: `sudo apt-get install ripgrep`
 ## Usage
 If you don't store breach lists in `/opt/breaches`, specify the location via the fourth argument: 
 `breach-parse @[COMPANY].com [COMPANY].txt /home/kali/latestbreaches/`
+
+I strongly recommend having your breach in the following format or the output may be a little whack: \
+`USERNAME:PASSWORD`
 
 ## Outputs
 * Main output
