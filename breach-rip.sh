@@ -81,11 +81,9 @@ fi
 sleep 3
 
 ## Extract emails, usernames, and passwords from here
-
-# I am keeping grep here because it is already fast.. I have not seen a performance hit but will upgrade to ripgrep if needed
 echo # newline
 echo 'Extracting email addresses...'
-grep -E -o '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b' $main >$emails
+rg -o '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b' $main >$emails
 
 sleep 1
 
