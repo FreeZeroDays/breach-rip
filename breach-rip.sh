@@ -3,6 +3,12 @@
 ## Hi guy, because it was not outputting everything I wanted when searching password breaches on an engagement and I craved moar. 
 ## Additionally, I found that using ripgrep was significanty faster than grep or python throughout my testing.
 
+if ! command -v rg &> /dev/null
+then
+    echo "This script utilizes ripgrep which you don't appear to have installed :("
+    exit 1
+fi
+
 if [ $# -lt 2 ]; then
     echo 'Breach-RIP: A Breached Domain Parsing Tool originally by Heath Adams'
     echo 'Modified and > Breach-RIP by Dominic (Deviant)'
