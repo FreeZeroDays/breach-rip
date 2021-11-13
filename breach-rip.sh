@@ -5,7 +5,8 @@
 
 if ! command -v rg &> /dev/null
 then
-    echo "This script utilizes ripgrep which you don't appear to have installed :("
+    echo "This script utilizes ripgrep which you don't appear to have installed!"
+    echo "Please install ripgrep from: https://github.com/BurntSushi/ripgrep" 
     exit 1
 fi
 
