@@ -1,5 +1,5 @@
 #!/bin/bash
-## Hey Deviant, why did you edit BreachParse.sh? It was working fine for me!
+## Hey Parzival, why did you edit BreachParse.sh? It was working fine for me!
 ## Hi guy, because it was not outputting everything I wanted when searching password breaches on an engagement and I craved moar. 
 ## Additionally, I found that using ripgrep was significanty faster than grep or python throughout my testing.
 
