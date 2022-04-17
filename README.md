@@ -8,14 +8,25 @@ breach-rip works best when ran against several databases.
 
 There are only two requirements to run breach-rip.. Ripgrep and a breach list. 
 
-Install Ripgrep: `sudo apt-get install ripgrep`
+Install Ripgrep: 
+
+```bash
+sudo apt-get install ripgrep
+```
 
 ## Usage
 If you don't store breach lists in `/opt/breaches`, specify the location via the fourth argument: 
-`breach-parse @[COMPANY].com [COMPANY].txt /home/kali/latestbreaches/`
 
-I strongly recommend having your breach in the following format or the output may not be as expected: \
-`USER:PASSWORD`
+```bash
+breach-parse @[COMPANY].com [COMPANY].txt /home/kali/latestbreaches/
+```
+
+I strongly recommend having your breach in the following format or the output may not be as expected: 
+
+```bash
+USER:PASSWORD
+Administrator:Hunter2
+```
 
 ## Outputs
 * Main output
